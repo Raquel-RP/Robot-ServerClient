@@ -17,7 +17,7 @@ public class HashingEncoding {
     public static String sha256(final String base) {
         try{
             
-            // Convertimos el string a bytes y luego lo hasheamos con SHA-256
+            // String to bytes the hash it with SHA-256
             final MessageDigest digest = MessageDigest.getInstance("SHA-256");
             final byte[] hash = digest.digest(base.getBytes("UTF-8"));  
             final StringBuilder hexString = new StringBuilder();
